@@ -19,26 +19,33 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-<!-- menu -->
-<?php echo get_template_part( 'template-parts/content', 'menu-editorials' ) ?>
-<!-- end menu -->
-
 <!-- banner -->
-<?php echo get_template_part( 'template-parts/content', 'banner' ) ?>
+<?php echo get_template_part( 'template-parts/content', 'home-banner' ) ?>
 <!-- end banner -->
 
+<!-- about -->
+<?php echo get_template_part( 'template-parts/content', 'home-about' ) ?>
+<!-- end about -->
+
+<!-- video -->
+<?php echo get_template_part( 'template-parts/content', 'home-video' ) ?>
+<!-- end video -->
+
+<!-- items -->
+<?php echo get_template_part( 'template-parts/content', 'home-items' ) ?>
+<!-- end items -->
+
 <!-- news -->
-<?php echo get_template_part( 'template-parts/content', 'news' ) ?>
+<?php echo get_template_part( 'template-parts/content', 'home-news' ) ?>
 <!-- end news -->
 
-<!-- blog -->
-<?php echo get_template_part( 'template-parts/content', 'blog' ) ?>
-<!-- end blog -->
+<!-- photos -->
+<?php echo get_template_part( 'template-parts/content', 'home-photos' ) ?>
+<!-- end photos -->
 
-<img
-class="img-fluid"
-data-src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/banner-illustration.png"
-alt="Single Temas">
+<!-- contact-us -->
+<?php echo get_template_part( 'template-parts/content', 'home-contact-us' ) ?>
+<!-- end contact-us -->
 
 <?php endwhile; ?>
 

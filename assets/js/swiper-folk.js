@@ -1,41 +1,57 @@
-// /* services */
-// const swiperServices = new Swiper('.swiper-container-services', {
-//     pagination: {
-//         el: '.swiper-pagination-services',
-//     },
-// });
-
-// /* services */
-// const swiperServices = new Swiper('.swiper-container-services', {
-//     pagination: {
-//         el: '.swiper-pagination-services',
-//     },
-// });
-
-// /* testemonials */
-// const swiperTestemonials = new Swiper('.swiper-container-testemonials', {
-//     navigation: {
-//         nextEl: '.swiper-button-next-testemonials',
-//         prevEl: '.swiper-button-prev-testemonials',
-//     },
-
-//     pagination: {
-//         el: '.swiper-pagination-testemonials',
-//     },
-// });
-
 /* banner materials */
-const swiperBannerMaterials = new Swiper( '.js-swiper-banner-materials', {
-    loop: true,
-    
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false
+const swiperMagazine = new Swiper( '.js-swiper-magazine', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,   
+        }
+    },
+
+    navigation: {
+        prevEl: '.js-swiper-button-prev-magazine',
+        nextEl: '.js-swiper-button-next-magazine'
     }
 })
 
-/* blogs */
-const swiperBlogs = new Swiper( '.js-swiper-blogs', {
+const swiperNews = new Swiper( '.js-swiper-news', {
     slidesPerView: 3,
-    spaceBetween: 30
-})
+    spaceBetween: 30,
+    loop: true,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true, 
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+        },
+
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+        }
+    },
+
+    pagination: {
+        el: '.js-swiper-pagination-news'
+    }
+}) 

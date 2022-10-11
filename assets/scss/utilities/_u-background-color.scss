@@ -13,8 +13,16 @@ $utility-name: 'u-bg-folk';
         background-color: $color-folk-dark-golden !important;
     }
 
+    &-dark-marron {
+        background-color: $color-folk-dark-marron !important;
+    }
+
     &-golden {
         background-color: $color-folk-golden !important;
+    }
+
+    &-green {
+        background-color: $color-folk-green !important;
     }
 
     &-light-gray {
@@ -23,6 +31,14 @@ $utility-name: 'u-bg-folk';
 
     &-none {
         background: none !important;
+    }
+
+    &-very-light-gray {
+        background-color: $color-folk-very-light-gray !important;
+    }
+
+    &-yellow {
+        background-color: $color-folk-yellow !important;
     }
 
     &-white {

@@ -1,0 +1,21 @@
+$layout-name: 'l-video';
+
+.#{$layout-name} {
+    &::before {
+        content: '';
+        width: 100%;
+        height: 300px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: $color-folk-very-light-gray;
+    }
+
+    iframe {
+        height: 600px;
+
+        @media screen and (max-width: 991px) {
+            height: 280px;
+        }
+    }
+}

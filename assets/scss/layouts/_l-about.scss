@@ -1,0 +1,12 @@
+$layout-name: 'l-about';
+
+.#{$layout-name} {
+    background-color: $color-folk-very-light-gray;
+    background-image: url(../images/about-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 991px) {
+        background-color: $color-folk-green;
+    }
+}

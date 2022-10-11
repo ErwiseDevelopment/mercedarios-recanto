@@ -5,6 +5,18 @@ $utility-name: 'u-color-folk';
         color: $color-folk-black !important;
     }
 
+    &-bold-marron {
+        color: $color-folk-bold-marron !important;
+    }
+
+    &-bold-golden {
+        color: $color-folk-bold-golden !important;
+    }
+
+    &-bold-gray {
+        color: $color-folk-bold-gray !important;
+    }
+
     &-dark-blue {
         color: $color-folk-dark-blue !important;
     }
@@ -23,6 +35,10 @@ $utility-name: 'u-color-folk';
 
     &-gray {
         color: $color-folk-gray !important;
+    }
+
+    &-green {
+        color: $color-folk-green !important;
     }
 
     &-light-gray {
@@ -76,6 +92,12 @@ $utility-name: 'u-color-folk';
                 color: $color-folk-black !important;
             }
         }
+
+        &-dark-golden {
+            &:hover {
+                color: $color-folk-dark-golden !important;
+            }
+        }   
 
         &-white {
             &:hover {
