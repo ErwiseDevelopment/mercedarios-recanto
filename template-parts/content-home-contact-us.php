@@ -20,14 +20,12 @@
 
                     <div class="col-lg-6 pt-5">
 
-                        <h3 class="u-font-size-32 lg:u-font-size-42 xxl:u-font-size-50 u-font-weight-bold u-font-family-cinzel-decorative text-center u-color-folk-white">
-                            Dúvidas?
-                            Fale conosco!
+                        <h3 class="u-font-size-32 lg:u-font-size-42 xxl:u-font-size-52 u-font-weight-bold u-font-family-cinzel-decorative u-color-folk-white">
+                            Quer saber mais?
                         </h3>
 
-                        <p class="xxl:u-font-size-20 u-font-weight-bold u-font-family-lato text-center u-color-folk-white">
-                            Mande sua mensagem ou dúvida <br>
-                            que entraremos em contato!
+                        <p class="xxl:u-font-size-20 xxl:u-font-size-30 u-font-weight-bold u-font-family-lato u-color-folk-white">
+                            Entre em contato!
                         </p>
 
                         <form>

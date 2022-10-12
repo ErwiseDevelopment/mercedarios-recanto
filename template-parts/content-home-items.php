@@ -22,12 +22,12 @@
 
                                 <div class="card-body">
                                     
-                                    <h5 class="u-font-size-22 u-font-weight-bold u-font-family-cinzel text-center u-color-folk-green mb-0">
+                                    <h5 class="u-font-size-22 xxl:u-font-size-30 u-font-weight-bold u-font-family-cinzel text-center u-color-folk-green mb-0">
                                         Vivência
                                         Fraterna
                                     </h5>
 
-                                    <p class="u-font-size-15 u-font-weight-regular u-font-family-lato text-center">
+                                    <p class="u-font-size-15 xxl:u-font-size-18 u-font-weight-regular u-font-family-lato text-center">
                                         Será essencial, pois, cada interno tem que 
                                         ter em mente que todos ali buscam o 
                                         mesmo ideal, que é a libertação. Isso se 

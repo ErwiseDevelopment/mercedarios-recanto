@@ -46,9 +46,9 @@
 
     <header id="masthead" class="header site-header navbar-static-top py-2 <?php echo wp_bootstrap_starter_bg_class(); ?>" style="background-color: #FFF;"role="banner">
 
-        <div class="container">
+        <div class="container-fluid px-5">
 
-            <nav class="l-navbar navbar navbar-expand-xl p-0">
+            <nav class="l-navbar navbar navbar-expand-xl justify-content-center px-5">
 
                 <div class="navbar-brand">
                     <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>

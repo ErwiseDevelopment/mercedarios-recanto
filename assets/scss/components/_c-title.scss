@@ -10,6 +10,10 @@ $component-name: 'c-title';
         text-align: center;
         color: $color-folk-dark-golden;
 
+        @media screen and (min-width: 1600px) {
+            font-size: 4.25rem;
+        }
+
         // &::before,
         // &::after {
         //     content: '';
