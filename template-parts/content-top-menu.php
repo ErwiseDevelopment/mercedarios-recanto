@@ -5,7 +5,7 @@
         <div class="row">
 
             <?php
-                $link_pattern = get_field( 'link_padrao', 'option' );
+                $link_pattern = get_field( 'link_padrao_portal', 'option' );
                 $menu_post_link = $link_pattern . get_field( 'link_menu_editorias', 'option');
                 $request_posts = wp_remote_get( $menu_post_link );
                  
