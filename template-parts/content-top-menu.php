@@ -17,7 +17,7 @@
                         </a>
                     </div>
                     <?php
-                        $link_pattern = get_field( 'link_padrao', 'option' );
+                        $link_pattern = get_field( 'link_padrao_portal', 'option' );
                         $menu_post_link = $link_pattern . get_field( 'link_menu_editorias', 'option');
                         $request_posts = wp_remote_get( $menu_post_link );
                         
@@ -41,7 +41,6 @@
                                 style="background-color: #A10F0F"
                                 href="<?php echo $rest_post->editoria_institucional;?>">
                                     Institucional
-                                    <?php var_dump($rest_post) ?>
                                 </a>
                             </div>
 
@@ -111,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <?php       endforeach;
+             <?php       endforeach;
                     endif; 
                 endif; 
             ?>
