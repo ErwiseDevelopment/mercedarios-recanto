@@ -16,7 +16,7 @@
                                 <div class="card-img overflow-hidden mx-auto">
                                     <img
                                     class="img-fluid w-100 h-100 u-object-fit-cover"
-                                    src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/item-1.png"
+                                    src="<?php echo get_sub_field();?>"
                                     alt="Item 1">
                                 </div>
 

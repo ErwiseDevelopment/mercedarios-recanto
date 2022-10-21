@@ -11,28 +11,28 @@
                     <div class="col-lg-6 mb-3 mb-lg-5">
                         <img
                         class="img-fluid w-100 u-object-fit-cover"
-                        src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/about-image.png"
+                        src=" <?php echo get_field( 'imagem' ) ?>"
                         alt="Conheça o Recanto Mercê">
                     </div>
 
                     <div class="col-lg-6 mb-lg-5 pb-3">
                         <h4 class="u-font-size-32 lg:u-font-size-42 xxl:u-font-size-54 u-font-weight-bold u-font-family-cinzel u-color-folk-white">
-                            Conheça o
-                            Recanto Mercê
+                        <?php echo get_field('titulo_mecedarios') ?>
                         </h4>
 
                         <p class="u-font-size-18 lg:u-font-size-22 xxl:u-font-size-30 u-font-weight-regular u-font-family-lato u-color-folk-white">
-                            O Recanto Mercê acolhe dependentes químicos
-                            que livremente desejam ser libertos de drogas, álcool
-                            e tantos outros tipos de vícios. O Recanto propicia
-                            moradia, alimentação e outras necessidades básicas
-                            para que os internos continuem firmes na caminhada 
-                            para uma nova vida. O acolhido deve solicitar sua 
-                            entrada com uma carta de próprio punho e assinada. 
-                            O dependente tem que ter consciência que a 
-                            dependência química é uma doença e como tal, deve
-                            ser tratada com seriedade e respeito. 
+                            <?php echo get_field( 'descricao_mecedarios' ) ?> 
                         </p>
+                        <div class="row justify-content-end">
+
+                            <div class="col-6 col-xl-4 mt-5 mt-lg-0">
+                                <a
+                                class="w-100 d-block u-font-size-18 u-font-weight-bold u-font-family-nunito text-center text-decoration-none u-color-folk-white u-bg-folk-golden py-2"
+                                href="<?php echo get_home_url( null, '/' ) .  get_field( 'btn_saiba_mais' ) ?>">
+                                    Saiba mais
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

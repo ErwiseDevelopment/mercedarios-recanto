@@ -7,7 +7,8 @@
             <div class="col-lg-10">
 
                 <div>
-                    <iframe class="w-100" src="https://www.youtube.com/embed/a-F4lRSpMJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <?php echo get_field('video_destaue') ?>
+                    <!-- <iframe class="w-100" src="https://www.youtube.com/embed/a-F4lRSpMJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>

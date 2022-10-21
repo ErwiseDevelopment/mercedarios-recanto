@@ -20,38 +20,52 @@
 
                     <div class="swiper-wrapper">
 
-                        <?php for( $i = 0; $i < 8; $i++ ) { ?>
+                    <?php
+                        $link_pattern = get_field( 'link_padrao_portal', 'option' );
+                        $post_link = $link_pattern . get_field( 'link_noticia', 'option' );
+                        $request_posts = wp_remote_get( $post_link );
+                        $count = 0;
+
+                        if(!is_wp_error( $request_posts )) :
+                            $body = wp_remote_retrieve_body( $request_posts );
+                            $data = json_decode( $body );
+
+                            if(!is_wp_error( $data )) :
+                                foreach( $data as $rest_post ) :
+                                    $count++;
+                                    $id = array( $rest_post->id );
+                    ?>
+
                             <div class="swiper-slide">    
                                 <a 
                                 class="card h-100 u-border-color-dark-golden rounded-0 text-decoration-none"
-                                href="<?php the_permalink() ?>">
+                                href="<?php echo get_home_url( null, 'noticias/?id=' . $rest_post->id )  ?>">
 
                                     <div class="card-img">
                                         <img
                                         class="img-fluid w-100"
-                                        src="http://mercedarios.erwisedev-hml.com.br/wp-content/uploads/2022/08/news-post-1.png"
-                                        alt="">
+                                        src="<?php echo $rest_post->featured_image_src; ?>"
+                                        alt="<?php echo $rest_post->title->rendered; ?>">
                                     </div>
 
                                     <div class="card-body pb-5">
 
                                         <p class="u-font-size-12 xxl:u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-dark-golden">
-                                            <span class="u-font-weight-medium">por</span> Redação <br>
-                                            06 de Maio de 2021
+                                            <!-- <span class="u-font-weight-medium">por</span>  <br> -->
+                                            <?php 
+                                                        $data = $rest_post->post_date;
+                                                        $data_format = get_date_format( $data );
+
+                                                        echo $data_format;  
+                                                    ?>
                                         </p>
 
                                         <h4 class="u-font-size-18 xxl:u-font-size-22 u-font-weight-bold u-font-family-cinzel u-color-folk-dark-gray">
-                                            Mensagem do Provincial
-                                            Dia de São Pedro Nolasco
+                                                <?php echo $rest_post->title->rendered; ?>
                                         </h4>
 
                                         <span class="u-font-size-14 xxl:u-font-size-17 u-font-weight-light u-font-style-italic u-font-family-lato u-color-folk-dark-gray">
-                                            Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Mauris lectus dolor, semper 
-                                            vitae libero se,d, ornare tempus dui. Donec 
-                                            efficitur, dui et facilisis commodo, mauris 
-                                            massa mollis nisi, ornare egestas lectus 
-                                            turpis tempus dolor. Aliquam.[...]
+                                            <?php echo $rest_post->post_excerpt; ?>
                                         </span>
                                     </div>
 
@@ -68,7 +82,12 @@
                                     </div>
                                 </a>
                             </div>                            
-                        <?php } ?>
+                            <?php
+                                    
+                                endforeach;
+                            endif;
+                        endif;
+                    ?>
                     </div>
                 </div>
 
