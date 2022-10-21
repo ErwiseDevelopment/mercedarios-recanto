@@ -109,15 +109,15 @@
                                                      pastoral do empreendedor
                                                     </a>
                                                 </div>
-                                                <div class="col-lg-2 py-1 px-0 px-lg-3">
+                                                <!-- <div class="col-lg-2 py-1 px-0 px-lg-3">
                                                     <a
                                                     class="w-100 h-100 d-flex justify-content-center align-items-center u-font-size-14 xxl:u-font-size-17 u-font-weight-regular u-font-family-cinzel text-center text-uppercase text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden py-2"
                                                     style="background-color:#640000"
-                                                    href="<?php echo $rest_post->editoria_acervo;?>">
+                                                    href="<php echo $rest_post->editoria_acervo;?>">
                                                         Acervo virtual <br>
                                                         (NOssa história)
                                                     </a>
-                                                </div>
+                                                </div> -->
                                                 
                                             <!-- end loop -->
                                         </div>
