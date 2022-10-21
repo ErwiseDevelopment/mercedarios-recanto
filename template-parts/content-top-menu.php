@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <?php       endforeach;
+         <?php       endforeach;
                     endif; 
                 endif; 
             ?>
