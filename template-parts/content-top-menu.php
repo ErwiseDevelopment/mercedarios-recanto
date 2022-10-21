@@ -116,6 +116,7 @@
                                                     href="<?php echo $rest_post->editoria_acervo;?>">
                                                         Acervo virtual <br>
                                                         (NOssa história)
+                                                        <?php var_dump( $rest_post);?>
                                                     </a>
                                                 </div>
                                                 
