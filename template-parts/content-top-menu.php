@@ -110,6 +110,10 @@
                     </div>
                 </div>
             </div>
+            <?php       endforeach;
+                    endif; 
+                endif; 
+            ?>
         </div>
     </div>
 </section>
