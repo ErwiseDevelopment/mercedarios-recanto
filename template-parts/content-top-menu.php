@@ -41,6 +41,7 @@
                                 style="background-color: #A10F0F"
                                 href="<?php echo $rest_post->editoria_institucional;?>">
                                     Institucional
+                                    <?php var_dump($rest_post) ?>
                                 </a>
                             </div>
 
