@@ -19,20 +19,7 @@
 
                     <div class="col-lg-9 mb-2 mb-lg-0">
 
-                    <?php
-                $link_pattern = get_field( 'link_padrao', 'option' );
-                $menu_post_link = $link_pattern . get_field( 'link_menu_editorias', 'option');
-                $request_posts = wp_remote_get( $menu_post_link );
-                 
-                if(!is_wp_error( $request_posts )) :
-                    $body = wp_remote_retrieve_body( $request_posts );
-                    $data = json_decode( $body );
-
-                    if(!is_wp_error( $data )) :
-                        foreach( $data as $rest_post ) :
-            //var_dump($rest_post);
-
-            ?>
+                   
 
 
                             <div class="col-12">
@@ -51,7 +38,20 @@
                                     <div class="col-lg-9 mb-2 mb-lg-0">
 
                                         <div class="row">
+                                            <?php
+                                        $link_pattern = get_field( 'link_padrao', 'option' );
+                                        $menu_post_link = $link_pattern . get_field( 'link_menu_editorias', 'option');
+                                        $request_posts = wp_remote_get( $menu_post_link );
+                                        
+                                        if(!is_wp_error( $request_posts )) :
+                                            $body = wp_remote_retrieve_body( $request_posts );
+                                            $data = json_decode( $body );
 
+                                            if(!is_wp_error( $data )) :
+                                                foreach( $data as $rest_post ) :
+                                    //var_dump($rest_post);
+
+                                    ?>
                                         
                                                 <div class="col-6 col-lg-3 px-1">
                                                     <a
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-         <?php       endforeach;
+        <?php       endforeach;
                     endif; 
                 endif; 
             ?>
