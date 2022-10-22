@@ -95,7 +95,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                         if( $galleries->have_posts() ) :
                             while( $galleries->have_posts() ) : $galleries->the_post();
                     ?>
-                                <div class="col-3 my-3">
+                                <div class="col-4 my-3">
 
                                     <a 
                                     class="card border-0 text-decoration-none"
