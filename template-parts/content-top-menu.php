@@ -25,7 +25,7 @@
                                 <div class="row">
 
                                     <div class="col-lg-3 d-flex justify-content-center align-items-center my-4 my-lg-0">
-                                        <a href="<?php echo $link_pattern( null, '/' ) ?>">
+                                        <a href="<?php echo $link_pattern ?>">
                                             <img
                                             class="img-fluid"
                                             src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/mercedarios-org.png"

@@ -22,7 +22,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-6 col-lg-3 mb-4">
-                    <a href="<?php echo $link_pattern?>">
+                    <a href="<?php echo $link_pattern ?>">
                         <img
                         class="img-fluid w-100"
                         src="<?php echo get_field('logo_footer', 'option'); ?>"
