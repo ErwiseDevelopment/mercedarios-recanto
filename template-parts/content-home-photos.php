@@ -30,13 +30,13 @@
                                 $args = array(
                                     'posts_per_page' => 1,
                                     'post_type'      => 'galeria',
-                                    // 'tax_query'      => array(
-                                    //     array(
-                                    //         'taxonomy' => 'categoria-foto',
-                                    //         'field'    => 'slug',
-                                    //         'terms'    => array( $editorial_slug_current )
-                                    //     )
-                                    // )
+                                    'tax_query'      => array(
+                                        array(
+                                            'taxonomy' => 'categoria-foto',
+                                            'field'    => 'slug',
+                                            'terms'    => 'destaque',
+                                        )
+                                    )
                                 );
 
                                 $gallery = new WP_Query( $args );
@@ -93,7 +93,7 @@
                             <div class="col-12">
                                 <a
                                 class="w-100 d-block u-font-size-22 u-font-weight-bold u-font-family-lato text-center text-decoration-none u-color-folk-white u-bg-folk-dark-golden py-2"
-                                href="<?php echo get_home_url( null, '/fotos/?cat=caridade' ) ?>">
+                                href="<?php echo get_home_url( null, '/fotos' ) ?>">
                                     Todas as Fotos
                                 </a>
                             </div>
