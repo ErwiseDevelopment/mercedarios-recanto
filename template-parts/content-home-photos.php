@@ -29,7 +29,7 @@
 
                                 $args = array(
                                     'posts_per_page' => 1,
-                                    'post_type'      => 'album',
+                                    'post_type'      => 'galeria',
                                     // 'tax_query'      => array(
                                     //     array(
                                     //         'taxonomy' => 'categoria-foto',

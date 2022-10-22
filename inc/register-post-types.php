@@ -27,7 +27,7 @@ function erwise_create_post_type() {
 	// 	'supports' 		=> array( 'title', 'thumbnail', 'editor' ) 
 	// ) );
 
-	register_post_type( 'Galeria', array(
+	register_post_type( 'galeria', array(
 		'labels' 		=> array( 'name' => 'Galerias', 'singular_name' => 'Galeria', 'all_items' => 'Todas Galerias' ),
 		'public' 		=> true,
 		'has_archive'	=> true,
