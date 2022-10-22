@@ -34,7 +34,7 @@
                     <a href="<?php echo $link_pattern ?>">
                         <img
                         class="img-fluid w-100"
-                        src="<?php echo get_field('logo_footer', 'option'); ?>"
+                        src="<?php echo get_field('logo', 'option'); ?>"
                         alt>
                     </a>
                 </div>
