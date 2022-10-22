@@ -22,10 +22,10 @@
             <div class="row justify-content-center">
 
                 <div class="col-6 col-lg-3 mb-4">
-                    <a href="#">
+                    <a href="<?php echo $link_pattern?>">
                         <img
                         class="img-fluid w-100"
-                        src="<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/logo-ordem-das-merces.png"
+                        src="<?php echo get_field('logo_footer', 'option'); ?>"
                         alt>
                     </a>
                 </div>
@@ -116,7 +116,7 @@
                                     <li class="u-list-style-none mb-2">
                                         <a class="u-font-size-14 u-font-weight-medium u-font-family-lato text-decoration-none u-color-folk-white"
                                         href="<?php echo $rest_post->editoria_caridade;?>">
-                                            Caridade
+                                            Ação Redentora
                                         </a>
                                     </li>
 
