@@ -41,7 +41,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                 
             <div class="col-md-4 mb-3">
                 <?php
-                    $post_categories = get_the_terms( get_the_ID(), 'categoria-foto' );
+                    $post_categories = get_the_terms( get_the_ID(), 'galeria-categoria' );
                 ?>
 
                 <a 

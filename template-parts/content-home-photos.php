@@ -32,7 +32,7 @@
                                     'post_type'      => 'galeria',
                                     'tax_query'      => array(
                                         array(
-                                            'taxonomy' => 'categoria-foto',
+                                            'taxonomy' => 'galeria-categoria',
                                             'field'    => 'slug',
                                             'terms'    => 'destaque',
                                         )
