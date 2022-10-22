@@ -30,6 +30,15 @@
                     </a>
                 </div>
 
+                <div class="col-6 col-lg-3 mb-4">
+                    <a href="<?php echo $link_pattern ?>">
+                        <img
+                        class="img-fluid w-100"
+                        src="<?php echo get_field('logo_footer', 'option'); ?>"
+                        alt>
+                    </a>
+                </div>
+
                 <div class="col-12 mt-3">
                     
                     <div class="row">
