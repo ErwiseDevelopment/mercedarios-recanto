@@ -68,7 +68,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                    $image_current = $_GET['cat'];
                    
                 } else {
-                    $image_current = 'home';
+                    $image_current = 'destaque';
                 }
         ?>
             <div class="col-12">
@@ -83,7 +83,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                             'order'          => 'DESC',
                             'tax_query'      => array(
                                 array(
-                                    'taxonomy' => 'categoria-foto',
+                                    'taxonomy' => 'galeria-categoria',
                                     'field'    => 'slug',
                                     'terms'    => array($image_current)
                                 )
