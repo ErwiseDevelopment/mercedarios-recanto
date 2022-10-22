@@ -4,7 +4,7 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-lg-10">
+            <div class="col-lg-7">
 
                 
                     <?php echo get_field('video_destaue') ?>
