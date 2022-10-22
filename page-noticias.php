@@ -91,7 +91,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
 						<p class="u-font-size-18 u-font-family-lato">
 							<span class="u-font-weight-bold u-color-folk-dark-gray">Categorias: </span>
 									<span class="u-font-weight-regular u-color-folk-dark-golden">
-										<?php echo $cat->name; ?>	
+										Notícias
 										
 									</span>
 							
