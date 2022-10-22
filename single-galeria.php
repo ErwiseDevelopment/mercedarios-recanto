@@ -56,7 +56,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
 		
             <div class="col-12">
 
-            <div class="swiper-wrap per">
+            <div class="row swiper-wrapper">
 <!-- //test -->
                     <?php
                         $images = get_field( 'galeria' );
