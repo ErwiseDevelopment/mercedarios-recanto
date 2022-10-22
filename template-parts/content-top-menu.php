@@ -61,7 +61,7 @@
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
                                                     href="<?php echo $rest_post->editoria_educacao;?>">
-                                                    educação
+                                                    Educação
                                                     </a>
                                                 </div>
                                                 
@@ -70,7 +70,7 @@
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
                                                     href="<?php echo $rest_post->editoria_paroquias;?>">
-                                                        paróquias
+                                                      Paróquias
                                                     </a>
                                                 </div>
                                                 
@@ -88,7 +88,7 @@
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
                                                     href="<?php echo $rest_post->editoria_dominocencio;?>">
-                                                        dom inocêncio
+                                                        Dom Inocêncio
                                                     </a>
                                                 </div>
                                                 
@@ -97,7 +97,7 @@
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
                                                     href="<?php echo $rest_post->editoria_revistamerce;?>">
-                                                        revista mercê
+                                                        Revista Mercê
                                                     </a>
                                                 </div>
                                                 
@@ -106,7 +106,7 @@
                                                     class="w-100 d-block u-font-size-14 xxl:u-font-size-16 u-font-weight-medium u-font-family-lato text-center text-decoration-none u-color-folk-white hover:u-bg-folk-dark-golden mb-1 py-2"
                                                     style="background-color: #A10F0F"
                                                     href="<?php echo $rest_post->editoria_empreendedor;?>">
-                                                     pastoral do empreendedor
+                                                     Pastoral do Empreendedor
                                                     </a>
                                                 </div>
                                              </div>
