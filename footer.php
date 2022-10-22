@@ -13,7 +13,6 @@
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
   
     <?php get_template_part( 'footer-widget' ); ?>
-    
     <footer 
     class="u-bg-cover u-bg-no-repeat py-5"
     style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-bootstrap-starter-child/assets/images/footer-background.png)">
@@ -44,8 +43,7 @@
                             <p class="d-flex">
                                 <span class="u-icon__free u-icon__local before::u-font-size-20 u-font-weight-semibold u-color-folk-white"></span>
                                 <span class="u-font-size-14 u-font-weight-medium u-font-family-lato u-color-folk-white pl-2">
-                                    Fazenda Caapitinga - <br>
-                                    Alexânia de Goiás
+                                    <?php echo get_field('endereco', 'option')?>
                                 </span>
                             </p>
 
@@ -69,7 +67,20 @@
                             <h4 class="u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-white">
                                 Veja também:
                             </h4>
+                            <?php
+                                $link_pattern = get_field( 'link_padrao_portal', 'option' );
+                                $menu_post_link = $link_pattern . get_field( 'link_menu_editorias', 'option');
+                                $request_posts = wp_remote_get( $menu_post_link );
+                                
+                                if(!is_wp_error( $request_posts )) :
+                                    $body = wp_remote_retrieve_body( $request_posts );
+                                    $data = json_decode( $body );
 
+                                    if(!is_wp_error( $data )) :
+                                        foreach( $data as $rest_post ) :
+                            //var_dump($rest_post);
+
+                            ?>
                             <div class="d-flex">
                                 <ul class="mb-0 pl-0">
                                     <li class="u-list-style-none mb-2">
@@ -139,7 +150,10 @@
                                 </ul>
                             </div>
                         </div>
-
+                        <?php       endforeach;
+                    endif; 
+                endif; 
+            ?>
                         <div class="col-lg-4 my-2 my-lg-0">
                             <h4 class="u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-white">
                                 Links
