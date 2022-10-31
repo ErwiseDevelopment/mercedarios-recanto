@@ -52,7 +52,7 @@
 
                                         <p class="u-font-size-12 xxl:u-font-size-15 u-font-weight-bold u-font-family-lato u-color-folk-dark-golden">
                                             <!-- <span class="u-font-weight-medium">por</span>  <br> -->
-                                            <?php 
+                                                    <?php 
                                                         $data = $rest_post->post_date;
                                                         $data_format = get_date_format( $data );
 
