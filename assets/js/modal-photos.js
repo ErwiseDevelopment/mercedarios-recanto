@@ -1,5 +1,6 @@
 (function() {
     if( document.querySelector( '.js-swiper-modal-photos' ) ) {
+        
         const photos = document.getElementsByClassName( 'js-photos' )
         const modal = document.querySelector( '.js-modal-photos' )
         const overlay = document.querySelector( '.js-modal-photos-overlay' )

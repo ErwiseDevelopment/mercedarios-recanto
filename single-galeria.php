@@ -56,8 +56,7 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
 		
             <div class="col-12">
 
-                <div class="row">
-<!-- //test -->
+                <div class="row swiper-wrapper">
                     <?php
                         $images = get_field( 'galeria' );
                         $count = -1;
@@ -69,8 +68,8 @@ style="background-image: url(<?php echo get_template_directory_uri()?>/../wp-boo
                                 <div class="col-md-4 my-2 js-photos" data-value="<?php echo $count; ?>">
                                     <img
                                     class="img-fluid w-100 h-100 u-object-fit-cover"
-                                    src="<?php echo $image[ 'url' ]; ?>"
                                     style="height:296px"
+                                    src="<?php echo $image[ 'url' ]; ?>"
                                     alt="<?php the_title() ?>">
                                 </div>
                     <?php
