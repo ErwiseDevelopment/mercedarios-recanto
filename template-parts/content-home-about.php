@@ -20,7 +20,7 @@
                         <?php echo get_field('titulo_mecedarios') ?>
                         </h4>
 
-                        <p class="u-font-size-18 lg:u-font-size-22 xxl:u-font-size-30 u-font-weight-regular u-font-family-lato u-color-folk-white">
+                        <p class="u-font-size-18 lg:u-font-size-22 xxl:u-font-size-25 u-font-weight-regular u-font-family-lato u-color-folk-white">
                             <?php echo get_field( 'descricao_mecedarios' ) ?> 
                         </p>
                         <div class="row justify-content-end">
