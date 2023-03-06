@@ -12,7 +12,7 @@
                     <div class="swiper-wrapper">
 
                         <!-- slide -->
-                        <?php for( $i = 0; $i < 3; $i++ ) { ?>
+                        <!-- <php for( $i = 0; $i < 3; $i++ ) { ?> -->
                             <div class="swiper-slide">
                                 <a  href="<?php echo get_field('link_materiais', 'option')?>" <?php if (get_field('nova_guia_materiais', 'option') == '1') :?>  target="_blank" <?php endif; ?> rel="noreferrer noopener">
                                     <img
@@ -21,7 +21,7 @@
                                     alt="Banner Material">
                                 </a>
                             </div>
-                        <?php } ?>
+                        <!-- ?php } ?> -->
                         <!-- end slide -->
                     </div>
                 </div>
